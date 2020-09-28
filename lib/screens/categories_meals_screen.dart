@@ -16,10 +16,15 @@ class CategoriesMealsScreen extends StatelessWidget {
      }).toList();
 
     return Scaffold(
-      appBar: AppBar(title:Text(routeArgs['title'])),
+      appBar: AppBar(title:Text(routeArgs['title']),centerTitle: true,),
       body: ListView.builder(itemBuilder: (ctx,index)
-      {return 
-      MealItem(title: categoryMeals[index].title, imageUrl: categoryMeals[index].imageUrl, duration: categoryMeals[index].duration, complexity: categoryMeals[index].complexity, affordability: categoryMeals[index].affordability);
+      {
+        return MealItem(title: categoryMeals[index].title, 
+      imageUrl: categoryMeals[index].imageUrl, 
+      duration: categoryMeals[index].duration, 
+      complexity: categoryMeals[index].complexity, 
+      affordability: categoryMeals[index].affordability
+      );
       },
       itemCount:categoryMeals.length
       )

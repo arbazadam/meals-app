@@ -11,6 +11,7 @@ enum Affordability
   Pricey,
   Luxurious
 }
+
 class Meal
 {
   final String id;
@@ -41,4 +42,5 @@ class Meal
   @required this.isVegan,
   @required this.isVegetarian
   });
+  
 }
