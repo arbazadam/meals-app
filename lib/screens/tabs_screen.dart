@@ -19,7 +19,7 @@ class _TabsScreenState extends State<TabsScreen> {
             Tab(icon: Icon(Icons.category),
             text: 'Categories',),
             Tab(icon: Icon(Icons.favorite),
-            text: 'Favoruites',)
+            text: 'Favourites',)
             ])
 ),
 body: TabBarView(children: [CategoriesScreen(),FavouritesScreen()]),
