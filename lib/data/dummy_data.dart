@@ -7,7 +7,7 @@ const DUMMY_CATEGORIES = const [
   Category(
     id: 'c1',
     title: 'Italian',
-    color: Colors.purple,
+    color: Colors.indigoAccent,
   ),
   Category(
     id: 'c2',
@@ -17,17 +17,17 @@ const DUMMY_CATEGORIES = const [
   Category(
     id: 'c3',
     title: 'Hamburgers',
-    color: Colors.orange,
+    color: Colors.orangeAccent,
   ),
   Category(
     id: 'c4',
     title: 'German',
-    color: Colors.amber,
+    color: Colors.purple,
   ),
   Category(
     id: 'c5',
     title: 'Light & Lovely',
-    color: Colors.blue,
+    color: Colors.brown,
   ),
   Category(
     id: 'c6',
@@ -37,12 +37,12 @@ const DUMMY_CATEGORIES = const [
   Category(
     id: 'c7',
     title: 'Breakfast',
-    color: Colors.lightBlue,
+    color: Colors.lime,
   ),
   Category(
     id: 'c8',
     title: 'Asian',
-    color: Colors.lightGreen,
+    color: Colors.redAccent,
   ),
   Category(
     id: 'c9',
@@ -57,7 +57,7 @@ const DUMMY_CATEGORIES = const [
 ];
 
 const DUMMY_MEALS = const [
-   Meal(
+  Meal(
     id: 'm1',
     categories: [
       'c1',
