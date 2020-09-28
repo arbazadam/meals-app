@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:meals_app/screens/favourites_screen.dart';
+import 'package:meals_app/widgets/main_drawer.dart';
 import 'categories_screen.dart';
 
 class TabsScreen extends StatefulWidget {
@@ -13,7 +14,9 @@ class _TabsScreenState extends State<TabsScreen> {
     return DefaultTabController(
       length:2,
       child: Scaffold(
-        appBar: AppBar(title:Text('Kitchen App'),centerTitle: true,
+        drawer: MainDrawer(),
+        appBar: AppBar(title:Text('Kitchen App'),
+        centerTitle: true,
         bottom: TabBar(
           tabs: [
             Tab(icon: Icon(Icons.category),
