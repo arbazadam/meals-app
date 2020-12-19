@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:meals_app/widgets/meal_item.dart';
+import '../widgets/meal_item.dart';
 import '../data/dummy_data.dart';
 import '../models/Meal.dart';
 

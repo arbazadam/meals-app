@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:meals_app/screens/deals_screen.dart';
+import 'package:meals_app/screens/filters_screen.dart';
 
 class MainDrawer extends StatelessWidget {
-  Widget buildListTile(IconData icon, String title) {
+  Widget buildListTile(IconData icon, String title, Function handleDraw) {
     return ListTile(
         leading: Icon(icon, size: 26),
         title: Text(title,
@@ -9,7 +11,7 @@ class MainDrawer extends StatelessWidget {
                 fontFamily: 'RobotoCondensed',
                 fontSize: 24,
                 fontWeight: FontWeight.w700)),
-        onTap: () {});
+        onTap: handleDraw);
   }
 
   @override
@@ -36,7 +38,9 @@ class MainDrawer extends StatelessWidget {
                   fontFamily: 'RobotoCondensed',
                   fontSize: 24,
                   fontWeight: FontWeight.w700)),
-          onTap: () {},
+          onTap: () {
+            Navigator.of(context).pushNamed("/");
+          },
         ),
         ListTile(
           leading: Icon(Icons.monetization_on),
@@ -45,9 +49,13 @@ class MainDrawer extends StatelessWidget {
                   fontFamily: 'RobotoCondensed',
                   fontSize: 24,
                   fontWeight: FontWeight.w700)),
-          onTap: () {},
+          onTap: () {
+            Navigator.of(context).pushNamed(DealsScreen.routeName);
+          },
         ),
-        buildListTile(Icons.filter, 'Filters'),
+        buildListTile(Icons.filter, 'Filters', () {
+          Navigator.of(context).pushNamed(FiltersScreen.routeName);
+        }),
       ],
     ));
   }
