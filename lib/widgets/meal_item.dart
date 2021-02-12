@@ -68,6 +68,7 @@ class MealItem extends StatelessWidget {
                         topRight: Radius.circular(15)),
                     child: Image.network(imageUrl,
                         height: 250, width: double.infinity, fit: BoxFit.cover),
+                    //child: Image.asset('assets/images/spg.jpg'),
                   ),
                   Positioned(
                     bottom: 20,
