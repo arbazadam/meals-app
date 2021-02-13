@@ -15,7 +15,7 @@ class _TabsScreenState extends State<TabsScreen> {
       length: 2,
       child: Scaffold(
         floatingActionButton: FloatingActionButton(
-          child: Text('hey bruh',textAlign: TextAlign.center,),
+          child: Icon(Icons.attach_money),
           onPressed: () {},
         ),
         drawer: MainDrawer(),
