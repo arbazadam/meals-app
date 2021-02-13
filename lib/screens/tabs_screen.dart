@@ -14,6 +14,10 @@ class _TabsScreenState extends State<TabsScreen> {
     return DefaultTabController(
       length: 2,
       child: Scaffold(
+        floatingActionButton: FloatingActionButton(
+          child: Text('hie'),
+          onPressed: () {},
+        ),
         drawer: MainDrawer(),
         appBar: AppBar(
             title: Text('Kitchen App'),
