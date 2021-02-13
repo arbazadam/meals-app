@@ -15,7 +15,7 @@ class _TabsScreenState extends State<TabsScreen> {
       length: 2,
       child: Scaffold(
         floatingActionButton: FloatingActionButton(
-          child: Text('hie'),
+          child: Text('Add'),
           onPressed: () {},
         ),
         drawer: MainDrawer(),
